@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="chevezModelStoreContainer" CdmEntityContainer="chevezEntities">
+    <EntitySetMapping Name="Register">
+      <EntityTypeMapping TypeName="chevezModel.Register">
+        <MappingFragment StoreEntitySet="Register">
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+          <ScalarProperty Name="contacto" ColumnName="contacto" />
+          <ScalarProperty Name="conpania" ColumnName="conpania" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

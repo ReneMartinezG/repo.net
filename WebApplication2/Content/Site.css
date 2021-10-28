@@ -1,0 +1,157 @@
+﻿@font-face {
+    font-family: "Gotham-Bold";
+    src: url("~/fonts/Gotham-Bold.ttf")
+}
+@font-face {
+    font-family: "Gotham-Black";
+    src: url("~/fonts/Gotham-Black.ttf")
+}
+@font-face {
+    font-family: "Gotham-BlackItalic";
+    src: url("~/fonts/Gotham-BlackItalic.ttf")
+}
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("~/fonts/Gotham-Book.ttf")
+}
+@font-face {
+    font-family: "Gotham-BoldItalic";
+    src: url("~/fonts/Gotham-BoldItalic.ttf")
+}
+@font-face {
+    font-family: "Gotham-BookItalic";
+    src: url("~/fonts/Gotham-BookItalic.ttf")
+}
+@font-face {
+    font-family: "Gotham-Light";
+    src: url("~/fonts/Gotham-Light.ttf")
+}
+@font-face {
+    font-family: "Gotham-LightItalic";
+    src: url("~/fonts/Gotham-LightItalic.ttf")
+}
+@font-face {
+    font-family: "Gotham-Medium";
+    src: url("~/fonts/Gotham-Medium.ttf")
+}
+@font-face {
+    font-family: "Gotham-MediumItalic";
+    src: url("~/fonts/Gotham-MediumItalic.ttf")
+}
+.font-Gotham-Bold {
+    font-family: "Gotham-Bold";
+}
+
+.font-Gotham-Black {
+    font-family: "Gotham-Black";
+}
+
+.font-Gotham-BlackItalic {
+    font-family: "Gotham-BlackItalic";
+}
+
+.font-Gotham-Book {
+    font-family: "Gotham-Book";
+}
+
+.font-Gotham-BoldItalic {
+    font-family: "Gotham-BoldItalic";
+}
+
+.font-Gotham-BookItalic {
+    font-family: "Gotham-BookItalic";
+}
+
+.font-Gotham-Light {
+    font-family: "Gotham-Light";
+}
+
+.font-Gotham-LightItalic {
+    font-family: "Gotham-LightItalic";
+}
+
+.font-Gotham-Medium {
+    font-family: "Gotham-Medium";
+}
+
+.font-Gotham-MediumItalic {
+    font-family: "Gotham-MediumItalic";
+}
+body {
+    background-image: url('../../img/fondo.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #f2f2f2f2;
+}
+
+.colorVisita {
+    background-color: #539379;
+}
+
+.colorDesc {
+    background-color: #00716d;
+}
+
+.colorWhite {
+    color: #ffffff;
+}
+.colorGreen {
+    color: #00716d;
+}
+
+.form {
+    width: 655px;
+    height: 852px;
+}
+
+.logo {
+    width: 304px;
+    height: 89px;
+}
+
+.backGreen {
+    background: #00716d;
+}
+
+.icon {
+    width: 56px;
+    height: 57px;
+}
+
+.caja {
+    width: 100px;
+    height: 96px;
+    background: #00716d;
+}
+.sizeEvento{
+    font-size:21.33px;
+}
+.sizeNovedades{
+    font-size: 42.5px;
+}
+.size2022 {
+    font-size: 47.16px;
+}
+.sizeHora {
+    font-size:18.21px;
+}
+.sizeEnviar {
+    font-size: 13px;
+}
+.sizeComienza {
+    font-size: 17.22px;
+}
+.sizeNumero {
+    font-size: 34.5px;
+}
+.sizeTxtCaja {
+    font-size: 12px;
+}
+.sizeVisita {
+    font-size: 15px;
+}
+.sizeFinal {
+    font-size: 11.33px;
+}

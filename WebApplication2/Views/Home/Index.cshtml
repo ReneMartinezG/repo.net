@@ -1,0 +1,147 @@
+﻿@model WebApplication2.Models.ViewModel.TablaRegistroViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="mt-5 mb-5">
+    <div class="row">
+        <div class="col-sm-4 col-md-8">
+           <p class="colorGreen font-Gotham-Bold sizeEvento sizeEvento">
+               Evento Digital
+           </p>
+            <p class="colorWhite font-Gotham-Bold sizeNovedades">
+                Novedades <br/>
+                Fiscales
+            </p>
+            <p class="colorWhite font-Gotham-Light size2022">
+                2022
+            </p>
+            <img src="~/img/linea.png" width="231" height="10"/>
+            <p class="colorGreen font-Gotham-Bold sizeEvento">
+                25 de noviembre
+            </p>
+            <p class="colorWhite font-Gotham-Book sizeHora">
+                8:30 am - 12:30pm
+            </p>
+        </div>
+     
+        <div class="col-sm-8 col-md-4 text-end">
+            <!-- <form> -->
+            @using (Html.BeginForm("Index","Home",FormMethod.Post))
+            {
+            <div class="form-floating mb-3">
+                @*<input type="text" class="form-control" id="Nombre" placeholder="Nombre Completo">*@
+                @*<label for="Nombre">Nombre Completo</label>*@
+                @*@Html.LabelFor(d => d.nombre)*@
+
+                @Html.TextBoxFor(d => d.nombre, new { @class = "form-control" })
+                <label for="Nombre">Nombre Completo</label>
+                @Html.ValidationMessageFor(d => d.nombre,null,new { @class="text-danger" })
+            </div>
+            <div class="form-floating mb-3">
+                @*<input type="email" class="form-control" id="Email" placeholder="Correo Corporativo">
+        <label for="Email">Correo Corporativo</label>*@
+                @Html.TextBoxFor(d => d.email, new { @class = "form-control" })
+                <label for="Email">Correo Corporativo</label>
+                @Html.ValidationMessageFor(d => d.email, null, new { @class = "text-danger" })
+            </div>
+            <div class="form-floating mb-3">
+                @*<input type="text" class="form-control" id="Compania" placeholder="Compañia">
+        <label for="Compania">Compañia</label>*@
+                @Html.TextBoxFor(d => d.conpania, new { @class = "form-control" })
+                <label for="Compania">Compañia</label>
+                @Html.ValidationMessageFor(d => d.conpania, null, new { @class = "text-danger" })
+            </div>
+            <div class="form-floating mb-3">
+                @*<input type="text" class="form-control" id="Contacto" placeholder="Contacto en CRZ">
+        <label for="Contacto">Contacto en CRZ</label>*@
+                @Html.TextBoxFor(d => d.contacto, new { @class = "form-control" })
+                <label for="Contacto">Contacto en CRZ</label>
+                @Html.ValidationMessageFor(d => d.contacto, null, new { @class = "text-danger" })
+            </div>
+            <div class="form-floating mb-3">
+                @*<input type="number" class="form-control" id="Celular" placeholder="Celular">
+        <label for="Celular">Celular</label>*@
+                @Html.TextBoxFor(d => d.celular, new { @class = "form-control", @type = "number" })
+                <label for="Celular">Celular</label>
+                @Html.ValidationMessageFor(d => d.celular, null, new { @class = "text-danger" })
+            </div>
+            <div class="form-floating mb-3">
+                @*<input type="password" class="form-control" id="Contrasenia" placeholder="Contraseña">
+        <label for="Contraseña">Contraseña</label>*@
+                @Html.PasswordFor(d => d.pass, new { @class = "form-control" })
+                <label for="Contrasenia">Contraseña</label>
+                @Html.ValidationMessageFor(d => d.pass, null, new { @class = "text-danger" })
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <input type="submit" class="btn backGreen colorWhite" value="Enviar Registro" />
+            </div>
+            }
+            <!-- </form> -->
+        </div>
+        
+        
+    </div>
+    
+</div>
+
+<div class="container text-center mt-5">
+    <p class="colorWhite font-Gotham-Bold sizeComienza mb-3">El evento comienza en:</p>
+    <div class="row d-inline-flex">
+        <div class="col mx-3 caja">
+            <p class="colorWhite font-Gotham-Bold sizeNumero">
+                30
+            </p>
+            <p class="colorWhite font-Gotham-Bold sizeTxtCaja">
+                Dias
+            </p>
+        </div>
+        <div class="col mx-3 caja">
+            <p class="colorWhite font-Gotham-Bold sizeNumero">
+                2
+            </p>
+            <p class="colorWhite font-Gotham-Bold sizeTxtCaja">
+                Horas
+            </p>
+        </div>
+        <div class="col mx-3 caja">
+            <p class="colorWhite font-Gotham-Bold sizeNumero">
+                11
+            </p>
+            <p class="colorWhite font-Gotham-Bold sizeTxtCaja">
+                Minutos
+            </p>
+        </div>
+        <div class="col mx-3 caja">
+            <p class="colorWhite font-Gotham-Bold sizeNumero">
+                45
+            </p>
+            <p class="colorWhite font-Gotham-Bold sizeTxtCaja">
+                Segundos
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center mt-5 mb-5">
+    <div class="row d-inline-flex">
+        <div class="col">
+            <img src="~/img/twitter.png" class="icon"/>
+        </div>
+        <div class="col">
+            <img src="~/img/facebook.png" class="icon" />
+        </div>
+        <div class="col">
+            <img src="~/img/linkedin.png" class="icon" />
+        </div>
+        <div class="col">
+            <img src="~/img/youtube.png" class="icon" />
+        </div>
+        <div class="col">
+            <img src="~/img/spotify.png" class="icon" />
+        </div>
+        <div class="col">
+            <img src="~/img/live.png" class="icon" />
+        </div>
+    </div>
+</div>
